@@ -8,7 +8,9 @@
     "lint": "next lint",
     "start": "next start",
     "t": "npx pw-watch --reporter @deploysentinel/playwright",
-    "th": "npx playwright test --headed"
+    "th": "npx playwright test --headed",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@radix-ui/react-alert-dialog": "^1.0.3",
@@ -31,6 +33,13 @@
     "@deploysentinel/playwright": "^0.3.3",
     "@deploysentinel/playwright-watch": "^0.2.2",
     "@playwright/test": "^1.32.3",
+    "@storybook/addon-essentials": "^7.0.5",
+    "@storybook/addon-interactions": "^7.0.5",
+    "@storybook/addon-links": "^7.0.5",
+    "@storybook/blocks": "^7.0.5",
+    "@storybook/nextjs": "^7.0.5",
+    "@storybook/react": "^7.0.5",
+    "@storybook/testing-library": "^0.0.14-next.2",
     "@types/eslint": "^8.21.3",
     "@types/node": "^18.15.5",
     "@types/prettier": "^2.7.2",
@@ -41,9 +50,11 @@
     "autoprefixer": "^10.4.14",
     "eslint": "^8.36.0",
     "eslint-config-next": "^13.2.4",
+    "eslint-plugin-storybook": "^0.6.11",
     "postcss": "^8.4.21",
     "prettier": "^2.8.6",
     "prettier-plugin-tailwindcss": "^0.2.6",
+    "storybook": "^7.0.5",
     "tailwindcss": "^3.3.0",
     "typescript": "^5.0.2"
   },

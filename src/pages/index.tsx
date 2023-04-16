@@ -23,7 +23,7 @@ const Home: NextPage = () => {
             Frontend Template
           </h1>
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-8"></div>
-          <p className="text-2xl text-white">
+          <p className="text-2xl text-black">
             {hello.data ? hello.data.greeting : "Loading tRPC query..."}
           </p>
           <Button variant="destructive">Testing</Button>
