@@ -3,6 +3,7 @@ import Head from "next/head";
 import Link from "next/link";
 
 import { api } from "@/utils/api";
+import { Button } from "@/ui/buttons";
 
 const Home: NextPage = () => {
   const hello = api.example.hello.useQuery({ text: "from tRPC" });
@@ -42,6 +43,7 @@ const Home: NextPage = () => {
                 to deploy it.
               </div>
             </Link>
+            <Button variant="destructive">Testing</Button>
           </div>
           <p className="text-2xl text-white">
             {hello.data ? hello.data.greeting : "Loading tRPC query..."}
