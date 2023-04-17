@@ -4,11 +4,11 @@
   "private": true,
   "scripts": {
     "build": "next build",
-    "dev": "next dev -p 3005q",
+    "dev": "next dev -p 3005",
     "lint": "next lint",
     "start": "next start",
-    "t": "npx pw-watch --reporter @deploysentinel/playwright",
-    "th": "npx playwright test --headed",
+    "t-watch": "npx pw-watch --reporter @deploysentinel/playwright",
+    "t": "npx playwright test --headed",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
