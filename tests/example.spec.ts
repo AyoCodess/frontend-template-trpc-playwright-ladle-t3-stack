@@ -1,8 +1,8 @@
 import { test, expect } from "@playwright/test";
 
 test("has title", async ({ page }) => {
-  await page.goto("http://localhost:3000/");
+  await page.goto("http://localhost:3005/");
 
   // Expect a title "to contain" a substring.
-  await expect(page).toHaveTitle(/Create T3 App/);
+  await expect(page).toHaveTitle(/Frontend Template/);
 });
