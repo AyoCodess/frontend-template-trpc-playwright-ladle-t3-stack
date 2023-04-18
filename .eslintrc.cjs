@@ -1,4 +1,3 @@
-// eslint-disable-next-line @typescript-eslint/no-var-requires
 const path = require("path");
 
 /** @type {import("eslint").Linter.Config} */
@@ -25,6 +24,9 @@ const config = {
     "plugin:storybook/recommended",
   ],
   rules: {
+    "@typescript-eslint/no-var-requires": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-unsafe-member-access": "off",
     "@typescript-eslint/await-thenable": "off",
     "@typescript-eslint/consistent-type-imports": [
       "warn",
