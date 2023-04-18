@@ -9,7 +9,7 @@ export default {
   },
 } satisfies StoryDefault;
 
-export const Button: Story<{
+export const Variants: Story<{
   variant:
     | "default"
     | "destructive"
@@ -26,12 +26,12 @@ export const Button: Story<{
   </ButtonBase>
 );
 
-Button.args = {
+Variants.args = {
   variant: "default",
   size: "default",
 };
 
-Button.argTypes = {
+Variants.argTypes = {
   variant: {
     control: { type: "select" },
     options: ["default", "destructive", "outline", "subtle", "ghost", "link"],
